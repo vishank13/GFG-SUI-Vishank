@@ -2,7 +2,7 @@
 //  GFGNewsVishankApp.swift
 //  GFGNewsVishank
 //
-//  Created by Bhanu Kaushik on 24/02/22.
+//  Created by Vishank Raghav on 25/02/22.
 //
 
 import SwiftUI
