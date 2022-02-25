@@ -1,22 +1,13 @@
-//
-//  TopArticleView.swift
-//  GFGNewsVishank
-//
-//  Created by Vishank Raghav on 25/02/22.
-//
-
 import SwiftUI
 
 struct TopArticleView: View {
-    
     let article: Item!
-    
     var body: some View {
         ZStack {
-            Color.init(red: 220/256, green: 220/256, blue: 220/256)
+            Color(AppConstants.bgGrey)
             VStack(alignment: .leading, spacing: 0) {
-                if let link = article.enclosure?.link {
-                    AsyncImage(url: URL(string: (link.components(separatedBy: "?")[0]) as! String )) { image in
+                if let link = article.enclosure?.link?.components(separatedBy: "?")[0]  {
+                    AsyncImage(url: URL(string: link)) { image in
                         image
                             .resizable()
                             .scaledToFit()
@@ -24,36 +15,31 @@ struct TopArticleView: View {
                         Text("")
                     }
                 }
-                Text(article.title!)
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.green)
-                    .lineLimit(2)
+                if let title = article.title, let pubDate = article.pubDate {
+                    Text(title)
+                        .font(.title3)
+                        .titleModifier()
+                        .padding()
+                    Divider()
+                        .padding(.horizontal)
+                    HStack {
+                        Text(pubDate.getDate())
+                            .dateModifier()
+                        Text(pubDate.getTime())
+                            .timeModifier()
+                    }
                     .padding()
-                Divider()
-                    .padding(.horizontal)
-                HStack {
-                    Text(article.pubDate!.getDate())
-                        .font(.subheadline)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.gray)
-                    Text(article.pubDate!.getTime())
-                        .font(.subheadline)
-                        .fontWeight(.regular)
-                        .foregroundColor(Color.gray)
                 }
-                .padding()
             }
-            .background(.white)
-            .cornerRadius(20)
-            .padding()
+            .rowModifier()
+            .padding(.top)
         }
     }
 }
 
 struct TopArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        TopArticleView(article: APIService.shared.articles[0])
+        TopArticleView(article: APIService.shared.items[0])
             .previewLayout(.sizeThatFits)
     }
 }

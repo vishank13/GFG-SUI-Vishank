@@ -12,11 +12,11 @@
 		4554179027C7AC110094F0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4554178F27C7AC110094F0BA /* Assets.xcassets */; };
 		4554179327C7AC110094F0BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4554179227C7AC110094F0BA /* Preview Assets.xcassets */; };
 		4554179A27C7AEFD0094F0BA /* TopArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554179927C7AEFD0094F0BA /* TopArticleView.swift */; };
-		4554179C27C7E0930094F0BA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554179B27C7E0930094F0BA /* String.swift */; };
 		4554179E27C7E0FA0094F0BA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554179D27C7E0FA0094F0BA /* AppConstants.swift */; };
 		455417A027C7E16D0094F0BA /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554179F27C7E16D0094F0BA /* ArticleModel.swift */; };
 		455417A227C7E1BF0094F0BA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455417A127C7E1BF0094F0BA /* APIService.swift */; };
 		455417A427C7E2200094F0BA /* RegularArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455417A327C7E2200094F0BA /* RegularArticleView.swift */; };
+		45B56B0827C8B27F00A28968 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B56B0727C8B27F00A28968 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +26,11 @@
 		4554178F27C7AC110094F0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4554179227C7AC110094F0BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4554179927C7AEFD0094F0BA /* TopArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArticleView.swift; sourceTree = "<group>"; };
-		4554179B27C7E0930094F0BA /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../../GFGVishank/GFGVishank/Extension/String.swift; sourceTree = "<group>"; };
 		4554179D27C7E0FA0094F0BA /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = "../../../GFGVishank/GFGVishank/App Constants/AppConstants.swift"; sourceTree = "<group>"; };
 		4554179F27C7E16D0094F0BA /* ArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleModel.swift; path = ../../../GFGVishank/GFGVishank/Model/ArticleModel.swift; sourceTree = "<group>"; };
 		455417A127C7E1BF0094F0BA /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = ../../../GFGVishank/GFGVishank/Service/APIService.swift; sourceTree = "<group>"; };
 		455417A327C7E2200094F0BA /* RegularArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularArticleView.swift; sourceTree = "<group>"; };
+		45B56B0727C8B27F00A28968 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +66,10 @@
 				455417A127C7E1BF0094F0BA /* APIService.swift */,
 				4554179F27C7E16D0094F0BA /* ArticleModel.swift */,
 				4554179D27C7E0FA0094F0BA /* AppConstants.swift */,
-				4554179B27C7E0930094F0BA /* String.swift */,
 				4554178B27C7AC0E0094F0BA /* GFGNewsVishankApp.swift */,
 				4554178D27C7AC0E0094F0BA /* ContentView.swift */,
 				4554179927C7AEFD0094F0BA /* TopArticleView.swift */,
+				45B56B0727C8B27F00A28968 /* Extensions.swift */,
 				455417A327C7E2200094F0BA /* RegularArticleView.swift */,
 				4554178F27C7AC110094F0BA /* Assets.xcassets */,
 				4554179127C7AC110094F0BA /* Preview Content */,
@@ -156,9 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4554178E27C7AC0E0094F0BA /* ContentView.swift in Sources */,
+				45B56B0827C8B27F00A28968 /* Extensions.swift in Sources */,
 				455417A227C7E1BF0094F0BA /* APIService.swift in Sources */,
 				4554179A27C7AEFD0094F0BA /* TopArticleView.swift in Sources */,
-				4554179C27C7E0930094F0BA /* String.swift in Sources */,
 				455417A427C7E2200094F0BA /* RegularArticleView.swift in Sources */,
 				4554178C27C7AC0E0094F0BA /* GFGNewsVishankApp.swift in Sources */,
 				455417A027C7E16D0094F0BA /* ArticleModel.swift in Sources */,
